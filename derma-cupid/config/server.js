@@ -9,6 +9,6 @@ module.exports = ({ env }) => {
   },
   url: theURL,
   proxy: false,
-  secure: false,
+  secure: true,
   httpOnly: false,}
 };
