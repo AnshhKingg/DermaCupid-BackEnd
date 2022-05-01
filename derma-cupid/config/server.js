@@ -1,5 +1,6 @@
 module.exports = ({ env }) => {
-  let theURL = "https://test.contriversedge.com"
+  let theURL = "https://dcadmin.dermacupid.com"
+  // let theURL = "localhost:1337"
 
   return {
   host: env('HOST', '0.0.0.0'),
