@@ -1,5 +1,5 @@
 module.exports = ({ env }) => {
-  let theURL = "http://test.contriversedge.com"
+  let theURL = "https://test.contriversedge.com"
 
   return {
   host: env('HOST', '0.0.0.0'),
