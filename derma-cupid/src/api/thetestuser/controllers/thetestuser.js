@@ -14,6 +14,7 @@ module.exports = {
       ctx.response.status = 200;
       ctx.body = entry;
     } catch (err) {
+      //////////////////
       ctx.body = err;
     }
   },
