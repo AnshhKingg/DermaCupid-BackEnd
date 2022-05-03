@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "help_sections",
+  "info": {
+    "singularName": "help-section",
+    "pluralName": "help-sections",
+    "displayName": "HelpSection"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "hasRead": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Subject": {
+      "type": "string",
+      "required": true
+    },
+    "URL": {
+      "type": "string"
+    },
+    "Timestamp": {
+      "type": "string"
+    }
+  }
+}
