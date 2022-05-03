@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_users",
+  "info": {
+    "singularName": "test-user",
+    "pluralName": "test-users",
+    "displayName": "TestUser"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FName": {
+      "type": "string",
+      "required": true
+    },
+    "LName": {
+      "type": "string"
+    }
+  }
+}
