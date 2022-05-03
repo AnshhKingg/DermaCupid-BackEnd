@@ -8,7 +8,7 @@ module.exports = ({ env }) => {
   app: {
     keys: env.array('APP_KEYS'),
   },
-  url: theURL,
+  // url: theURL,
   proxy: false,
   secure: true,
   httpOnly: false,}
