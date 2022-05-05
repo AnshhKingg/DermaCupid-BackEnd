@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * combinedregisteroptions service.
+ * combinedoptions service.
  */
 
 module.exports = () => ({});

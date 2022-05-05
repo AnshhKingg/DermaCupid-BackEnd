@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * A set of functions called "actions" for `combinedregisteroptions`
+ * A set of functions called "actions" for `combinedoptions`
  */
 
 module.exports = {
@@ -67,5 +67,9 @@ module.exports = {
       populate: true
     });
     requiredObject['smokes'] = entry;
+    ctx.body = requiredObject
+  },
+  all: async (ctx, next) => {
+    ctx.body = 'ok'
   }
 };
