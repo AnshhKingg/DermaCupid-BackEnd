@@ -4,10 +4,11 @@
   "info": {
     "singularName": "register-privacy",
     "pluralName": "register-privacies",
-    "displayName": "RegisterPrivacy"
+    "displayName": "RegisterPrivacy",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
