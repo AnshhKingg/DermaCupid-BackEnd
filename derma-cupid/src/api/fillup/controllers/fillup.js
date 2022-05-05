@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * A set of functions called "actions" for `fillup`
- */
+* A set of functions called "actions" for `fillup`
+*/
 
 module.exports = {
   exampleAction: async (ctx, next) => {
