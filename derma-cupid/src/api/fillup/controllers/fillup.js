@@ -7,59 +7,87 @@
 module.exports = {
   exampleAction: async (ctx, next) => {
     let data = [
-      'Music',
-      'Movies',
-      'TV Shows',
-      'Shopping',
-      'Travel',
-      'Outdoors',
-      'Reading',
-      'Writing',
-      'Blogging',
-      'Internet',
-      'Eating out',
-      'Bars/Pubs',
-      'Jogging',
-      'Walking',
-      'Gym workout',
-      'Yoga ',
-      'Meditation',
-      'Gardening',
-      'Adventure Sports',
-      'Cars',
-      'Bikes',
-      'Gadgets',
-      'Pets',
-      'Tattoos',
-      'Art/Handicraft',
-      'Painting',
-      'Photography',
-      'Cooking',
-      'Clean eating',
-      'Sports',
-      'Indoor games',
-      'Video games',
-      'History',
-      'Politics',
-      'Collectibles',
-      'Social service',
-      'Charity',
-      'Wildlife',
-      'Puzzles',
-      'Crosswords',
-      'Performing Arts',
-      'Astronomy',
-      'Astrology',
-      'Theatre',
-      'Religious activities',
+      {
+        value: 'Vitiligo',
+        label: 'Vitiligo',
+      },
+      {
+        value: 'Psoriasis',
+        label: 'Psoriasis',
+      },
+      {
+        value: 'Acne',
+        label: 'Acne',
+      },
+      {
+        value: 'Eczema',
+        label: 'Eczema',
+      },
+      {
+        value: 'Dermatitis',
+        label: 'Dermatitis',
+      },
+      {
+        value: 'Scleroderma',
+        label: 'Scleroderma',
+      },
+      {
+        value: 'Albinism',
+        label: 'Albinism',
+      },
+      {
+        value: 'Alopecia',
+        label: 'Alopecia',
+      },
+      {
+        value: 'Burn',
+        label: 'Burn',
+      },
+      {
+        value: 'Scar',
+        label: 'Scar',
+      },
+      {
+        value: 'Birthmark',
+        label: 'Birthmark',
+      },
+      {
+        value: 'Neurofibroma',
+        label: 'Neurofibroma',
+      },
+      {
+        value: 'Rosacea',
+        label: 'Rosacea',
+      },
+      {
+        value: 'Ichthyosis',
+        label: 'Ichthyosis',
+      },
+      {
+        value: 'Lichen Planus',
+        label: 'Lichen Planus',
+      },
+      {
+        value: 'Melanoma',
+        label: 'Melanoma',
+      },
+      {
+        value: 'Others',
+        label: 'Others',
+      },
+      {
+        value: 'No Skin Condition',
+        label: 'No Skin Condition',
+      },
     ]
     
     // ctx.body = theData
     // return ctx
     for await (const d of data) {
-      const entry = await strapi.db.query('api::register-interest.register-interest').create({
+      const entry = await strapi.db.query('api::register-skin-disease.register-skin-disease').create({
         data: {
-          Value: d
+          Value: d['value'],
+          Label: d['label']
         },
       });
     }
