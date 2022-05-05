@@ -4,10 +4,11 @@
   "info": {
     "singularName": "register-interest",
     "pluralName": "register-interests",
-    "displayName": "RegisterInterest"
+    "displayName": "RegisterInterest",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
