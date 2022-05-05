@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_privacies",
+  "info": {
+    "singularName": "register-privacy",
+    "pluralName": "register-privacies",
+    "displayName": "RegisterPrivacy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

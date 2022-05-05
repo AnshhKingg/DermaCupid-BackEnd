@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_professions",
+  "info": {
+    "singularName": "register-profession",
+    "pluralName": "register-professions",
+    "displayName": "RegisterProfession"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Profession": {
+      "type": "string",
+      "required": true
+    },
+    "NameList": {
+      "displayName": "ProfessionList",
+      "type": "component",
+      "repeatable": true,
+      "component": "profession-list.profession-list",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_diets",
+  "info": {
+    "singularName": "register-diet",
+    "pluralName": "register-diets",
+    "displayName": "RegisterDiet"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

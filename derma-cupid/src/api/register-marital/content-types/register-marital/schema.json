@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_maritals",
+  "info": {
+    "singularName": "register-marital",
+    "pluralName": "register-maritals",
+    "displayName": "RegisterMarital"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

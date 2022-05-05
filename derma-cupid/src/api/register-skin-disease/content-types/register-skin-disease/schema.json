@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_skin_diseases",
+  "info": {
+    "singularName": "register-skin-disease",
+    "pluralName": "register-skin-diseases",
+    "displayName": "RegisterSkinDisease"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

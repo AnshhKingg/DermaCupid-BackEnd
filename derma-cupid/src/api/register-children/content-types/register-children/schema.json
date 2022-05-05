@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_childrens",
+  "info": {
+    "singularName": "register-children",
+    "pluralName": "register-childrens",
+    "displayName": "RegisterChildren"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_highest_educations",
+  "info": {
+    "singularName": "register-highest-education",
+    "pluralName": "register-highest-educations",
+    "displayName": "RegisterHighestEducation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

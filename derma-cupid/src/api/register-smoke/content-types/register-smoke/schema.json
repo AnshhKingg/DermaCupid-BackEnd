@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_smokes",
+  "info": {
+    "singularName": "register-smoke",
+    "pluralName": "register-smokes",
+    "displayName": "RegisterSmoke"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

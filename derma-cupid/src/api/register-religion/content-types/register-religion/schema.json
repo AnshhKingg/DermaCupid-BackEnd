@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_religions",
+  "info": {
+    "singularName": "register-religion",
+    "pluralName": "register-religions",
+    "displayName": "RegisterReligion"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

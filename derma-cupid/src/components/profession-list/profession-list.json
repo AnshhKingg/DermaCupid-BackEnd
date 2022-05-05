@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_profession_list_profession_lists",
+  "info": {
+    "displayName": "ProfessionList",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_drinks",
+  "info": {
+    "singularName": "register-drink",
+    "pluralName": "register-drinks",
+    "displayName": "RegisterDrink"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

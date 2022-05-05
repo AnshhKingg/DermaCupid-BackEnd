@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_interests",
+  "info": {
+    "singularName": "register-interest",
+    "pluralName": "register-interests",
+    "displayName": "RegisterInterest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

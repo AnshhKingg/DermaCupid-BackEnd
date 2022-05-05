@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_education_fields",
+  "info": {
+    "singularName": "register-education-field",
+    "pluralName": "register-education-fields",
+    "displayName": "RegisterEducationField"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
