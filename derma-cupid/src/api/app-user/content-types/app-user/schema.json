@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_users",
+  "info": {
+    "singularName": "app-user",
+    "pluralName": "app-users",
+    "displayName": "AppUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "FbURL": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "Religion": {
+      "type": "string"
+    },
+    "MaritalStatus": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "SkinCondition": {
+      "type": "string"
+    },
+    "DateOfBirth": {
+      "type": "string"
+    },
+    "Smokes": {
+      "type": "string"
+    },
+    "DisplayPicture": {
+      "type": "string"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "EducationField": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Gender": {
+      "type": "string"
+    },
+    "Profession": {
+      "type": "string"
+    },
+    "HighestEducation": {
+      "type": "string"
+    },
+    "Diet": {
+      "type": "string"
+    },
+    "Children": {
+      "type": "string"
+    },
+    "Drinks": {
+      "type": "string"
+    },
+    "Privacy": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "HasCompletedRegistration": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
