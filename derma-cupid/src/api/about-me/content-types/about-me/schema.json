@@ -13,12 +13,6 @@
   "attributes": {
     "about": {
       "type": "text"
-    },
-    "app_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::app-user.app-user",
-      "inversedBy": "about_me"
     }
   }
 }

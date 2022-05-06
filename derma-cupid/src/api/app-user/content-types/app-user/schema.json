@@ -85,11 +85,9 @@
       "default": false,
       "required": true
     },
-    "about_me": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::about-me.about-me",
-      "inversedBy": "app_user"
+    "AboutMe": {
+      "type": "string",
+      "required": false
     }
   }
 }
