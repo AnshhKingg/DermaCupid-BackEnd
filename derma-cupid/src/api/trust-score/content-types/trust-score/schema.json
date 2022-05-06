@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trust_scores",
+  "info": {
+    "singularName": "trust-score",
+    "pluralName": "trust-scores",
+    "displayName": "TrustScore"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "EmailVerified": {
+      "type": "boolean"
+    },
+    "PhotoIdVerified": {
+      "type": "boolean"
+    }
+  }
+}
