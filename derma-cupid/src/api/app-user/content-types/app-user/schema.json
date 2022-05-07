@@ -88,6 +88,10 @@
     "AboutMe": {
       "type": "string",
       "required": false
+    },
+    "Interests": {
+      "type": "json",
+      "required": true
     }
   }
 }

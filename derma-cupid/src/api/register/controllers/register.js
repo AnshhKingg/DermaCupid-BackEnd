@@ -60,6 +60,9 @@ module.exports = {
       }
       else
       {
+        body['Interests'] = {
+          data: []
+        }
         // if no, create
         let newEntry = await strapi.db.query('api::app-user.app-user').create({
           data: body
