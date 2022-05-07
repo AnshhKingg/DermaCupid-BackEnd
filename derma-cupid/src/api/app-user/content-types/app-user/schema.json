@@ -12,86 +12,82 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "UID": {
+    "uid": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "FbURL": {
+    "fbUrl": {
       "type": "string"
     },
-    "Country": {
+    "country": {
       "type": "string"
     },
-    "Religion": {
+    "religion": {
       "type": "string"
     },
-    "MaritalStatus": {
+    "maritalStatus": {
       "type": "string"
     },
-    "City": {
+    "city": {
       "type": "string"
     },
-    "State": {
+    "state": {
       "type": "string"
     },
-    "SkinCondition": {
+    "skinCondition": {
       "type": "string"
     },
-    "DateOfBirth": {
+    "dateOfBirth": {
       "type": "string"
     },
-    "Smokes": {
+    "smokes": {
       "type": "string"
     },
-    "DisplayPicture": {
+    "displayPicture": {
       "type": "string"
     },
-    "FullName": {
+    "fullName": {
       "type": "string"
     },
-    "EducationField": {
+    "educationField": {
       "type": "string"
     },
-    "Email": {
+    "email": {
       "type": "email"
     },
-    "Gender": {
+    "gender": {
       "type": "string"
     },
-    "Profession": {
+    "profession": {
       "type": "string"
     },
-    "HighestEducation": {
+    "highestEducation": {
       "type": "string"
     },
-    "Diet": {
+    "diet": {
       "type": "string"
     },
-    "Children": {
+    "children": {
       "type": "string"
     },
-    "Drinks": {
+    "drinks": {
       "type": "string"
     },
-    "Privacy": {
+    "privacy": {
       "type": "string"
     },
-    "PhoneNumber": {
+    "phoneNumber": {
       "type": "string"
     },
-    "HasCompletedRegistration": {
+    "hasCompletedRegistration": {
       "type": "boolean",
       "default": false,
       "required": true
     },
-    "AboutMe": {
+    "aboutMe": {
       "type": "string",
       "required": false
-    },
-    "Interests": {
-      "type": "json",
-      "required": true
     }
   }
 }

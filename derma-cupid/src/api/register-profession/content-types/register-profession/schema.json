@@ -4,18 +4,19 @@
   "info": {
     "singularName": "register-profession",
     "pluralName": "register-professions",
-    "displayName": "RegisterProfession"
+    "displayName": "RegisterProfession",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Profession": {
+    "profession": {
       "type": "string",
       "required": true
     },
-    "NameList": {
+    "nameList": {
       "displayName": "ProfessionList",
       "type": "component",
       "repeatable": true,

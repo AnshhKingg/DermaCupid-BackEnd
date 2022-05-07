@@ -13,9 +13,9 @@ module.exports = {
       try
       {
         let tokenData = jwt_decode(token)['data'];
-        let UID = tokenData['UID'];
+        let UID = tokenData['uid'];
         let pp = await strapi.db.query('api::partner-preference.partner-preference').findMany({
-          where: {UID},
+          where: {uid:UID},
           populate: true
         });
         ctx.body = pp[0]
@@ -40,9 +40,9 @@ module.exports = {
       try
       {
         let tokenData = jwt_decode(token)['data'];
-        let UID = tokenData['UID'];
+        let UID = tokenData['uid'];
         let pp = await strapi.db.query('api::partner-preference.partner-preference').updateMany({
-          where: {UID},
+          where: {uid:UID},
           data: body
         });
         ctx.body = {

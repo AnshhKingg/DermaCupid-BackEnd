@@ -4,18 +4,24 @@
   "info": {
     "singularName": "trust-score",
     "pluralName": "trust-scores",
-    "displayName": "TrustScore"
+    "displayName": "TrustScore",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "EmailVerified": {
+    "emailVerified": {
       "type": "boolean"
     },
-    "PhotoIdVerified": {
+    "photoIdVerified": {
       "type": "boolean"
+    },
+    "uid": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

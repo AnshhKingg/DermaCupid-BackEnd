@@ -2,11 +2,12 @@
   "collectionName": "components_profession_list_profession_lists",
   "info": {
     "displayName": "ProfessionList",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     }

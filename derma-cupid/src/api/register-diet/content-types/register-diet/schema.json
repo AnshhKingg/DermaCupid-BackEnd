@@ -4,18 +4,19 @@
   "info": {
     "singularName": "register-diet",
     "pluralName": "register-diets",
-    "displayName": "RegisterDiet"
+    "displayName": "RegisterDiet",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Value": {
+    "value": {
       "type": "string",
       "required": true
     },
-    "Label": {
+    "label": {
       "type": "string",
       "required": true
     }

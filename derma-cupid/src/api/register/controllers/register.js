@@ -12,11 +12,11 @@ module.exports = {
   registerAccount: async (ctx, next) => {
     try {
       let body = ctx.request.body
-      let UID = body['UID']
+      let UID = body['uid']
 
       // initially send me just the UID and Phone Number
       let entry = await strapi.db.query('api::app-user.app-user').findMany({
-        where: {UID},
+        where: {uid:UID},
         populate: true
       });
 
@@ -24,7 +24,7 @@ module.exports = {
       if(entry.length > 0)
       {
         //if yes check if profile completed
-        if(entry[0]['HasCompletedRegistration'])
+        if(entry[0]['hasCompletedRegistration'])
         {
           // return token saying its okay to go for listing
           let token = jwt.sign({
@@ -60,7 +60,7 @@ module.exports = {
       }
       else
       {
-        body['Interests'] = {
+        body['interests'] = {
           data: []
         }
         // if no, create
@@ -89,11 +89,11 @@ module.exports = {
     try {
       let body = ctx.request.body;
       // update hasSigned up
-      body['HasCompletedRegistration'] = true
-      let UID = body['UID'];
+      body['hasCompletedRegistration'] = true
+      let UID = body['uid'];
 
       let entry = await strapi.db.query('api::app-user.app-user').findMany({
-        where: {UID},
+        where: {uid:UID},
         populate: true
       });
 
@@ -109,55 +109,52 @@ module.exports = {
 
       // enter the details
 
-      console.log("Hey")
-      console.log(body)
       let updateEntry = await strapi.db.query('api::app-user.app-user').updateMany({
-        where: {UID},
+        where: {uid:UID},
         data: body
       });
 
-      console.log("Hey2")
 
       entry = await strapi.db.query('api::app-user.app-user').findMany({
-        where: {UID},
+        where: {uid:UID},
         populate: true
       });
 
       entry = entry[0]
 
       let thePPBody = {
-        UID: entry['UID'],
-        Religion: {
+        uid: entry['uid'],
+        religion: {
           "data": [
             "Doesn't Matter"
           ]
         },
-        SkinConditions: {
+        skinConditions: {
           "data": [
             "Doesn't Matter"
           ]
         },
-        LocationCountries: {
+        locationCountries: {
           "data": [
             "Doesn't Matter"
           ]
         }
       }
 
-      if(entry['Gender'] == 'Male')
+      if(entry['gender'] == 'Male')
       {
-        thePPBody['AgeFrom'] = 18
-        thePPBody['AgeTill'] = 27
+        thePPBody['ageFrom'] = 18
+        thePPBody['ageTill'] = 27
       }
       else
       {
-        thePPBody['AgeFrom'] = 21
-        thePPBody['AgeTill'] = 27
+        thePPBody['ageFrom'] = 21
+        thePPBody['ageTill'] = 27
       }
 
-      if(entry['MaritalStatus'] == "Never Married")
+      if(entry['maritalStatus'] == "Never Married")
       {
-        thePPBody['MaritalStatus'] = {
+        thePPBody['maritalStatus'] = {
           "data": [
             "Doesn't Matter"
           ]
@@ -166,7 +163,7 @@ module.exports = {
 
       let pp = await strapi.db.query('api::partner-preference.partner-preference').findMany({
         where: {
-          UID: entry['UID']
+          uid: entry['uid']
         }
       });
 

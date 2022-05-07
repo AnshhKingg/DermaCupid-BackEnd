@@ -4,18 +4,19 @@
   "info": {
     "singularName": "register-education-field",
     "pluralName": "register-education-fields",
-    "displayName": "RegisterEducationField"
+    "displayName": "RegisterEducationField",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Value": {
+    "value": {
       "type": "string",
       "required": true
     },
-    "Label": {
+    "label": {
       "type": "string",
       "required": true
     }

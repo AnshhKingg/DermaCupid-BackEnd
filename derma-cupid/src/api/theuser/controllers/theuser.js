@@ -13,9 +13,9 @@ module.exports = {
       try
       {
         let tokenData = jwt_decode(token)['data'];
-        let UID = tokenData['UID'];
+        let UID = tokenData['uid'];
         let user = await strapi.db.query('api::app-user.app-user').findMany({
-          where: {UID},
+          where: {uid:UID},
           populate: true
         });
         ctx.body = user[0]
@@ -40,13 +40,13 @@ module.exports = {
       try
       {
         let tokenData = jwt_decode(token)['data'];
-        let UID = tokenData['UID'];
+        let UID = tokenData['uid'];
         let user = await strapi.db.query('api::app-user.app-user').updateMany({
-          where: {UID},
+          where: {uid:UID},
           data: body
         });
         user = await strapi.db.query('api::app-user.app-user').findMany({
-          where: {UID},
+          where: {uid:UID},
           populate: true
         });
         ctx.status = 201;

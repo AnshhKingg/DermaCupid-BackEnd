@@ -4,18 +4,19 @@
   "info": {
     "singularName": "register-drink",
     "pluralName": "register-drinks",
-    "displayName": "RegisterDrink"
+    "displayName": "RegisterDrink",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Value": {
+    "value": {
       "type": "string",
       "required": true
     },
-    "Label": {
+    "label": {
       "type": "string",
       "required": true
     }

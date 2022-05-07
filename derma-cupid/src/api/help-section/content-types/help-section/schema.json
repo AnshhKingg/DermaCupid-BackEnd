@@ -4,17 +4,18 @@
   "info": {
     "singularName": "help-section",
     "pluralName": "help-sections",
-    "displayName": "HelpSection"
+    "displayName": "HelpSection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Email": {
+    "email": {
       "type": "email"
     },
     "hasRead": {
@@ -22,14 +23,14 @@
       "default": false,
       "required": true
     },
-    "Subject": {
+    "subject": {
       "type": "string",
       "required": true
     },
-    "URL": {
+    "url": {
       "type": "string"
     },
-    "Timestamp": {
+    "timestamp": {
       "type": "string"
     }
   }

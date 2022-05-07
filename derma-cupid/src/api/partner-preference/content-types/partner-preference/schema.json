@@ -12,25 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "AgeFrom": {
+    "ageFrom": {
       "type": "integer"
     },
-    "AgeTill": {
+    "ageTill": {
       "type": "integer"
     },
-    "SkinConditions": {
+    "skinConditions": {
       "type": "json"
     },
-    "MaritalStatus": {
+    "maritalStatus": {
       "type": "json"
     },
-    "LocationCountries": {
+    "locationCountries": {
       "type": "json"
     },
-    "Religion": {
+    "religion": {
       "type": "json"
     },
-    "UID": {
+    "uid": {
       "type": "string",
       "unique": true,
       "required": true
