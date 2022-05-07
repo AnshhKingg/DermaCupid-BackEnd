@@ -4,7 +4,7 @@ const jwt_decode = require('jwt-decode');
 
 /**
  * A set of functions called "actions" for `theuser`
- */
+*/
 
 module.exports = {
   getProfile: async (ctx, next) => {

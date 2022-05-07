@@ -8,27 +8,32 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "AgeFrom": {
-      "type": "string"
+      "type": "integer"
     },
-    "AgeTo": {
-      "type": "string"
+    "AgeTill": {
+      "type": "integer"
     },
-    "PPMarital": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::register-marital.register-marital",
-      "mappedBy": "register_marital"
+    "SkinConditions": {
+      "type": "json"
     },
-    "PPReligion": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::register-religion.register-religion",
-      "mappedBy": "partner_preference"
+    "MaritalStatus": {
+      "type": "json"
+    },
+    "LocationCountries": {
+      "type": "json"
+    },
+    "Religion": {
+      "type": "json"
+    },
+    "UID": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

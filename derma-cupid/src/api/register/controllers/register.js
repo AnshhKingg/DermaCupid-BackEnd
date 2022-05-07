@@ -83,7 +83,7 @@ module.exports = {
     // }
   },
   registerDetails: async (ctx, next) => {
-    try {
+    // try {
       let body = ctx.request.body;
       // update hasSigned up
       body['HasCompletedRegistration'] = true
@@ -105,19 +105,78 @@ module.exports = {
       }
 
       // enter the details
+
+      console.log("Hey")
+      console.log(body)
       let updateEntry = await strapi.db.query('api::app-user.app-user').updateMany({
         where: {UID},
         data: body
       });
+
+      console.log("Hey2")
 
       entry = await strapi.db.query('api::app-user.app-user').findMany({
         where: {UID},
         populate: true
       });
 
+      entry = entry[0]
+
+      let thePPBody = {
+        UID: entry['UID'],
+        Religion: {
+          "data": [
+            "Doesn't Matter"
+          ]
+        },
+        SkinConditions: {
+          "data": [
+            "Doesn't Matter"
+          ]
+        },
+        LocationCountries: {
+          "data": [
+            "Doesn't Matter"
+          ]
+        }
+      }
+
+      if(entry['Gender'] == 'Male')
+      {
+        thePPBody['AgeFrom'] = 18
+        thePPBody['AgeTill'] = 27
+      }
+      else
+      {
+        thePPBody['AgeFrom'] = 21
+        thePPBody['AgeTill'] = 27
+      }
+
+      if(entry['MaritalStatus'] == "Never Married")
+      {
+        thePPBody['MaritalStatus'] = {
+          "data": [
+            "Doesn't Matter"
+          ]
+        }
+      }
+
+      let pp = await strapi.db.query('api::partner-preference.partner-preference').findMany({
+        where: {
+          UID: entry['UID']
+        }
+      });
+
+      if(pp.length == 0)
+      {
+        let newPartnerPreference = await strapi.db.query('api::partner-preference.partner-preference').create({
+          data: thePPBody
+        });
+      }
+
       let token = jwt.sign({
         exp: Math.floor(Date.now() / 1000) + (60 * 60 * 24 * 45),
-        data: entry[0]
+        data: entry
       }, JWT_TOKEN);
 
       ctx.body = {
@@ -128,8 +187,8 @@ module.exports = {
       ctx.status = 201
       return ctx;
 
-    } catch (err) {
-      ctx.body = err;
-    }
+    // } catch (err) {
+    //   ctx.body = err;
+    // }
   }
 };

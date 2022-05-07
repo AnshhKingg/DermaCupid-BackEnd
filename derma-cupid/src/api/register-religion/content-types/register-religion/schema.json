@@ -18,12 +18,6 @@
     "Label": {
       "type": "string",
       "required": true
-    },
-    "partner_preference": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::partner-preference.partner-preference",
-      "inversedBy": "PPReligion"
     }
   }
 }
