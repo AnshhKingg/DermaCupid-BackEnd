@@ -10,7 +10,7 @@ const JWT_TOKEN = "LxDy9qxCcayHUvRn5Vrw8mzbqivmNTMGTb9vJw2WLZI66NZDTnfAlESeAF1Wx
 
 module.exports = {
   registerAccount: async (ctx, next) => {
-    // try {
+    try {
       let body = ctx.request.body
       let UID = body['UID']
 
@@ -78,12 +78,12 @@ module.exports = {
         ctx.status = 201
         return ctx;
       }
-    // } catch (err) {
-    //   ctx.body = err;
-    // }
+    } catch (err) {
+      ctx.body = err;
+    }
   },
   registerDetails: async (ctx, next) => {
-    // try {
+    try {
       let body = ctx.request.body;
       // update hasSigned up
       body['HasCompletedRegistration'] = true
@@ -187,8 +187,8 @@ module.exports = {
       ctx.status = 201
       return ctx;
 
-    // } catch (err) {
-    //   ctx.body = err;
-    // }
+    } catch (err) {
+      ctx.body = err;
+    }
   }
 };
