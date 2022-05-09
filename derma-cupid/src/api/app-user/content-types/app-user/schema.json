@@ -88,6 +88,29 @@
     "aboutMe": {
       "type": "string",
       "required": false
+    },
+    "emailVerified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "photoVerified": {
+      "type": "boolean"
+    },
+    "photoIdVerified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "fbLinkVerified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "mobileVerified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
