@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_preference_locations",
+  "info": {
+    "singularName": "partner-preference-location",
+    "pluralName": "partner-preference-locations",
+    "displayName": "PartnerPreferenceLocation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

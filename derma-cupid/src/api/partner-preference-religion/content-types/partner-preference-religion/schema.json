@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_preference_religions",
+  "info": {
+    "singularName": "partner-preference-religion",
+    "pluralName": "partner-preference-religions",
+    "displayName": "PartnerPreferenceReligion"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "required": true
+    },
+    "religion": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

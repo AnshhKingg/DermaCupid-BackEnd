@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_preference_skin_conditions",
+  "info": {
+    "singularName": "partner-preference-skin-condition",
+    "pluralName": "partner-preference-skin-conditions",
+    "displayName": "PartnerPreferenceSkinCondition"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string"
+    },
+    "skinCondition": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

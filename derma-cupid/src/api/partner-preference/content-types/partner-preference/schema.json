@@ -18,18 +18,6 @@
     "ageTill": {
       "type": "integer"
     },
-    "skinConditions": {
-      "type": "json"
-    },
-    "maritalStatus": {
-      "type": "json"
-    },
-    "locationCountries": {
-      "type": "json"
-    },
-    "religion": {
-      "type": "json"
-    },
     "uid": {
       "type": "string",
       "unique": true,

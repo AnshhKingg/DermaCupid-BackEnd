@@ -123,22 +123,7 @@ module.exports = {
       entry = entry[0]
 
       let thePPBody = {
-        uid: entry['uid'],
-        religion: {
-          "data": [
-            "Doesn't Matter"
-          ]
-        },
-        skinConditions: {
-          "data": [
-            "Doesn't Matter"
-          ]
-        },
-        locationCountries: {
-          "data": [
-            "Doesn't Matter"
-          ]
-        }
+        uid: entry['uid']
       }
 
       if(entry['gender'] == 'Male')
@@ -154,10 +139,22 @@ module.exports = {
 
       if(entry['maritalStatus'] == "Never Married")
       {
-        thePPBody['maritalStatus'] = {
-          "data": [
-            "Doesn't Matter"
-          ]
+
+        //api::partner-preference-marital-status.partner-preference-marital-status
+        let pp = await strapi.db.query('api::partner-preference-marital-status.partner-preference-marital-status').findMany({
+          where: {
+            uid: entry['uid'],
+            maritalStatus: "Never Married"
+          }
+        });
+        if(pp.length == 0)
+        {
+          let newPP = await strapi.db.query('api::partner-preference-marital-status.partner-preference-marital-status').create({
+            data: {
+              uid: entry['uid'],
+              maritalStatus: "Never Married"
+            }
+          });
         }
       }
 

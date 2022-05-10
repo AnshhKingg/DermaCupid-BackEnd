@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_preference_marital_statuses",
+  "info": {
+    "singularName": "partner-preference-marital-status",
+    "pluralName": "partner-preference-marital-statuses",
+    "displayName": "PartnerPreferenceMaritalStatus"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "required": true
+    },
+    "maritalStatus": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
