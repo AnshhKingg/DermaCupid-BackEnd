@@ -1,13 +1,40 @@
 module.exports = {
   routes: [
-    // {
-    //  method: 'GET',
-    //  path: '/countrycitystate',
-    //  handler: 'countrycitystate.exampleAction',
-    //  config: {
-    //    policies: [],
-    //    middlewares: [],
-    //  },
-    // },
+    {
+     method: 'GET',
+     path: '/countries/all',
+     handler: 'countrycitystate.allCountries',
+     config: {
+       policies: [],
+       middlewares: [],
+     },
+    },
+    {
+      method: 'GET',
+      path: '/country/:name',
+      handler: 'countrycitystate.particularCountry',
+      config: {
+        policies: [],
+        middlewares: [],
+      },
+    },
+    {
+      method: 'GET',
+      path: '/state/:state',
+      handler: 'countrycitystate.particularState',
+      config: {
+        policies: [],
+        middlewares: [],
+      },
+    },
+    {
+      method: 'GET',
+      path: '/states/all',
+      handler: 'countrycitystate.allStates',
+      config: {
+        policies: [],
+        middlewares: [],
+      },
+    },
   ],
 };
