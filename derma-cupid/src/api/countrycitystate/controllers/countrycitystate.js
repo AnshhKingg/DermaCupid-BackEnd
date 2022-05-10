@@ -38,7 +38,7 @@ module.exports = {
   particularState: async (ctx, next) => {
     try {
       let state = ctx.request.params.state
-      const data = await strapi.db.query('api::register-country.register-country').findMany({
+      const data = await strapi.db.query('api::register-city.register-city').findMany({
         populate: true,
         where: {state}
       });
