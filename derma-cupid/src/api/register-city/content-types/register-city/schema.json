@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_cities",
+  "info": {
+    "singularName": "register-city",
+    "pluralName": "register-cities",
+    "displayName": "RegisterCity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "state": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cities": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

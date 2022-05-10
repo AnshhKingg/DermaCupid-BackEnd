@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_countries",
+  "info": {
+    "singularName": "register-country",
+    "pluralName": "register-countries",
+    "displayName": "RegisterCountry"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "states": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
