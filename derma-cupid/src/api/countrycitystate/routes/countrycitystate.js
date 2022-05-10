@@ -11,7 +11,7 @@ module.exports = {
     },
     {
       method: 'GET',
-      path: '/country/:name',
+      path: '/country/:country',
       handler: 'countrycitystate.particularCountry',
       config: {
         policies: [],
