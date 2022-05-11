@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_photos",
+  "info": {
+    "singularName": "user-photo",
+    "pluralName": "user-photos",
+    "displayName": "UserPhoto"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "required": true
+    },
+    "pictureLink": {
+      "type": "string",
+      "required": true
+    },
+    "isApproved": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
